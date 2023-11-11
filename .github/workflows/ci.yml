@@ -19,6 +19,7 @@ jobs:
 
       - name: build and push
         uses: docker/build-push-action@v4
-        context: .
-        push: true
-        tags: karimaboshamia/ci-v2
+        with:
+          context: .
+          push: true
+          tags: karimaboshamia/ci-v2
